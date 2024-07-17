@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <title>Crud de Peliculas</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+   
+</head>
+<body>
+    <br>
+    <form id="peliForm" onsubmit="postPeli(event)">
+        <input type="text" name="titulo" placeholder="Nombre de Pelicula" required>
+        <input type="text" name="genero" placeholder="Descripcion" required>
+        <input type="text" name="duracion" placeholder="Duración" required>
+        <input type="text" name="imagen" placeholder="URL de la Imagen" required>
+        <button type="submit" id="btnSubmit">Agregar</button>
+    </form>
+    <br>
+    
+    <div id="peliList" class="peli-list"></div>
+    
+    <footer>
+        <p>&copy; ProYecTo FiNaL de CoDoaCoDo @ All Rigths Reserved</p>
+    </footer>
+    <script src="Script.js"></script>
+</body>
+</html>
+
